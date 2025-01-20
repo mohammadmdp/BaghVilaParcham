@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="ContentDescription,RtlHardcoded">
+    
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_small">
+    
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_small">
+        
+            <RelativeLayout
+                android:id="@+id/rl_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            
+                <ProgressBar
+                    android:id="@+id/pb_image_list"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_centerInParent="true" />
+            
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/iv_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@android:color/darker_gray"
+                    android:elevation="4dp"
+                    android:scaleType="centerCrop" />
+            </RelativeLayout>
+    
+            <ImageView
+                android:id="@+id/iv_remove_new_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/rl_image"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/round_corner_bg"
+                android:backgroundTint="@android:color/black"
+                app:srcCompat="@drawable/ic_remove"
+                app:tint="@android:color/holo_red_light" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

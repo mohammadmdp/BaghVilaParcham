@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "691305973650",
+    "firebase_url": "https://baghvilaparcham-1546473972483.firebaseio.com",
+    "project_id": "baghvilaparcham-1546473972483",
+    "storage_bucket": "baghvilaparcham-1546473972483.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:691305973650:android:d4fe072e59518ace50634b",
+        "android_client_info": {
+          "package_name": "mdp.baghvilaparchammanagementapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "691305973650-q6e4oks9nc2m9akr1prksssbqn0furm2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mdp.baghvilaparchammanagementapp",
+            "certificate_hash": "907b5f959697dc31356fdb0e4c1ee7340d5cbff0"
+          }
+        },
+        {
+          "client_id": "691305973650-0obn9j1o490kjgnbdnj8s4bm2nqim03f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZAT-CsWmtNFozRGwumr_NJFx0widIRT4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "691305973650-0obn9j1o490kjgnbdnj8s4bm2nqim03f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

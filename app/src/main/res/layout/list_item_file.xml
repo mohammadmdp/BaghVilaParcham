@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_small"
+    android:padding="@dimen/margin_small"
+    tools:ignore="ContentDescription">
+    
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_small">
+    
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            android:padding="@dimen/margin_small">
+        
+            <Button
+                android:id="@+id/btn_sold_unsold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/yekan"
+                android:text="@string/sold"
+                android:textColor="@color/design_default_color_error"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        
+            <RelativeLayout
+                android:id="@+id/rl_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+            
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+    
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/sdv_file_item_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@android:color/darker_gray"
+                        android:elevation="4dp"
+                        android:scaleType="centerCrop"
+                        android:visibility="visible" />
+                </RelativeLayout>
+            
+                <ProgressBar
+                    android:id="@+id/pb_image"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+        
+            </RelativeLayout>
+        
+            <RelativeLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_image"
+                android:layout_marginTop="@dimen/margin_small"
+                android:padding="@dimen/margin_small">
+            
+                <TextView
+                    android:id="@+id/tv_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/yekan"
+                    android:text="@string/file_code"
+                    android:textColor="@color/overlayTextRed"
+                    android:textStyle="bold" />
+    
+                <TextView
+                    android:id="@+id/tv_file_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@+id/tv_code"
+                    android:fontFamily="@font/yekan"
+                    android:text="@string/file_title"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+            
+                <TextView
+                    android:id="@+id/tv_file_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_file_title"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:fontFamily="@font/yekan"
+                    android:text="@string/file_text" />
+            
+                <TextView
+                    android:id="@+id/tv_price_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_file_text"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:fontFamily="@font/yekan"
+                    android:text="@string/price_title"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        
+        
+            </RelativeLayout>
+    
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/content"
+                android:layout_marginTop="@dimen/margin_small">
+    
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_open_file"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/btn_remove"
+                    app:layout_constraintTop_toTopOf="parent">
+        
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+    
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ic_baseline_open_in_browser_24" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+                </androidx.cardview.widget.CardView>
+    
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_share_file"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_edit"
+                    app:layout_constraintTop_toTopOf="parent">
+        
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+    
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ic_baseline_share_24" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+                </androidx.cardview.widget.CardView>
+    
+                <Button
+                    android:id="@+id/btn_remove"
+                    style="@style/AppTheme.NegativeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/remove"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+    
+                <Button
+                    android:id="@+id/btn_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+    
+            </androidx.constraintlayout.widget.ConstraintLayout>
+    
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

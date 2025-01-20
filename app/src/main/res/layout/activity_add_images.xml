@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    tools:context=".ActivityAddImages"
+    tools:ignore="RelativeOverlap,ContentDescription,RtlHardcoded">
+    
+    <RelativeLayout
+        android:id="@+id/rl_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary">
+        
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/margin_medium"
+            app:srcCompat="@drawable/logo"
+            app:tint="#99000000" />
+        
+        <TextView
+            android:id="@+id/tv_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/mehr"
+            android:text="@string/app_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_file_code"
+        android:layout_below="@id/rl_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView
+            android:id="@+id/tv_label_file_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:fontFamily="@font/yekan"
+            android:labelFor="@id/et_file_code"
+            android:text="@string/file_code"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorPrimary" />
+        
+        <EditText
+            android:id="@+id/et_file_code_add_images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_label_file_code"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:inputType="numberSigned"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/textSecondaryColor" />
+    </RelativeLayout>
+    
+    <Button
+        android:id="@+id/btn_select_images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_file_code"
+        android:layout_margin="@dimen/margin_medium"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:backgroundTint="@color/colorPrimary"
+        android:fontFamily="@font/yekan"
+        android:text="@string/select_images"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    
+    <GridView
+        android:id="@+id/gv_new_images"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rl_buttons"
+        android:layout_below="@id/btn_select_images"
+        android:numColumns="2"
+        tools:listitem="@layout/list_item_new_image" />
+    
+    <RelativeLayout
+        android:id="@+id/rl_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/margin_medium">
+    
+        <Button
+            android:id="@+id/btn_apply_contact_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:backgroundTint="@color/colorPrimary"
+            android:enabled="false"
+            android:fontFamily="@font/yekan"
+            android:text="@string/apply_contact_info"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    
+        <Button
+            android:id="@+id/btn_send_new_images"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="@font/yekan"
+            android:text="@string/send_new_images"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    </RelativeLayout>
+
+</RelativeLayout>

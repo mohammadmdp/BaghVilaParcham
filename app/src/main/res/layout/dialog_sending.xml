@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#C4D3FD"
+    android:padding="@dimen/margin_medium">
+    
+    
+    <TextView
+        android:id="@+id/tv_dialog_sending_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="false"
+        android:layout_centerHorizontal="true"
+        android:text="@string/sending_please_wait"
+        android:textAppearance="@android:style/TextAppearance.Material.Small" />
+    
+    <ProgressBar
+        android:id="@+id/pb_dialog_sending"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_dialog_sending_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:minWidth="300dip" />
+    
+    
+    <Button
+        android:id="@+id/btn_dialog_sending_retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pb_dialog_sending"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/try_again"
+        android:visibility="invisible" />
+
+</RelativeLayout>

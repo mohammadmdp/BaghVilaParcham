@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/MDP/Desktop/AD/BaghVilaParchamManager/app/src/main/res/drawable/ic_baseline_rotate_right_24.xml" value="0.173" />
+        <entry key="..\:/Users/MDP/Desktop/AD/BaghVilaParchamManager/app/src/main/res/layout/activity_add_file.xml" value="0.33" />
+        <entry key="..\:/Users/MDP/Desktop/AD/BaghVilaParchamManager/app/src/main/res/layout/activity_add_images.xml" value="0.1640625" />
+        <entry key="..\:/Users/MDP/Desktop/AD/BaghVilaParchamManager/app/src/main/res/layout/activity_add_new_device.xml" value="0.1" />
+        <entry key="..\:/Users/MDP/Desktop/AD/BaghVilaParchamManager/app/src/main/res/layout/activity_answer_comments.xml" value="0.21" />
+        <entry key="..\:/Users/MDP/Desktop/AD/BaghVilaParchamManager/app/src/main/res/layout/activity_blog_management.xml" value="0.33" />
+        <entry key="..\:/Users/MDP/Desktop/AD/BaghVilaParchamManager/app/src/main/res/layout/activity_code_generator.xml" value="0.1359375" />
+        <entry key="..\:/Users/MDP/Desktop/AD/BaghVilaParchamManager/app/src/main/res/layout/activity_comment_management.xml" value="0.25" />
+        <entry key="..\:/Users/MDP/Desktop/AD/BaghVilaParchamManager/app/src/main/res/layout/activity_edit_tags.xml" value="0.33" />
+        <entry key="..\:/Users/MDP/Desktop/AD/BaghVilaParchamManager/app/src/main/res/layout/activity_files.xml" value="0.1359375" />
+        <entry key="..\:/Users/MDP/Desktop/AD/BaghVilaParchamManager/app/src/main/res/layout/activity_footer_instagram_posts.xml" value="0.17" />
+        <entry key="..\:/Users/MDP/Desktop/AD/BaghVilaParchamManager/app/src/main/res/layout/activity_images.xml" value="0.15" />
+        <entry key="..\:/Users/MDP/Desktop/AD/BaghVilaParchamManager/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/MDP/Desktop/AD/BaghVilaParchamManager/app/src/main/res/layout/activity_view_devices.xml" value="0.1921875" />
+        <entry key="..\:/Users/MDP/Desktop/AD/BaghVilaParchamManager/app/src/main/res/layout/dialog_answer_comment.xml" value="0.25" />
+        <entry key="..\:/Users/MDP/Desktop/AD/BaghVilaParchamManager/app/src/main/res/layout/dialog_confirm.xml" value="0.33" />
+        <entry key="..\:/Users/MDP/Desktop/AD/BaghVilaParchamManager/app/src/main/res/layout/dialog_edit_instagram_post.xml" value="0.25" />
+        <entry key="..\:/Users/MDP/Desktop/AD/BaghVilaParchamManager/app/src/main/res/layout/dialog_get_device_name.xml" value="0.178125" />
+        <entry key="..\:/Users/MDP/Desktop/AD/BaghVilaParchamManager/app/src/main/res/layout/dialog_sending.xml" value="0.5" />
+        <entry key="..\:/Users/MDP/Desktop/AD/BaghVilaParchamManager/app/src/main/res/layout/item_code.xml" value="0.1359375" />
+        <entry key="..\:/Users/MDP/Desktop/AD/BaghVilaParchamManager/app/src/main/res/layout/list_item_answer_comment.xml" value="0.33" />
+        <entry key="..\:/Users/MDP/Desktop/AD/BaghVilaParchamManager/app/src/main/res/layout/list_item_blog.xml" value="0.5" />
+        <entry key="..\:/Users/MDP/Desktop/AD/BaghVilaParchamManager/app/src/main/res/layout/list_item_device.xml" value="0.33" />
+        <entry key="..\:/Users/MDP/Desktop/AD/BaghVilaParchamManager/app/src/main/res/layout/list_item_file.xml" value="0.33" />
+        <entry key="..\:/Users/MDP/Desktop/AD/BaghVilaParchamManager/app/src/main/res/layout/list_item_image.xml" value="0.15" />
+        <entry key="..\:/Users/MDP/Desktop/AD/BaghVilaParchamManager/app/src/main/res/layout/list_item_instagram_post.xml" value="0.33" />
+        <entry key="..\:/Users/MDP/Desktop/AD/BaghVilaParchamManager/app/src/main/res/layout/list_item_new_comment.xml" value="0.18" />
+        <entry key="..\:/Users/MDP/Desktop/AD/BaghVilaParchamManager/app/src/main/res/layout/list_item_new_image.xml" value="0.5" />
+        <entry key="..\:/Users/MDP/Desktop/AD/BaghVilaParchamManager/app/src/main/res/layout/list_item_tag.xml" value="0.5" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Encapsulation issuesJava</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
